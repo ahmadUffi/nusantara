@@ -1,0 +1,40 @@
+.img::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  right: 50%;
+  transform: translateX(50%);
+  width: 460px;
+  height: 460px;
+  border-radius: 50%;
+  background-color: rgb(32, 121, 255);
+  z-index: 10;
+}
+
+/* create responsive for tab and phone */
+
+@media (max-width: 835px) {
+  .img::before {
+    content: "";
+    position: absolute;
+    top: -15%;
+    right: 50%;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: rgb(32, 121, 255);
+  }
+}
+
+@media (max-width: 468px) {
+  .img::before {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 50%;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgb(32, 121, 255);
+  }
+}
